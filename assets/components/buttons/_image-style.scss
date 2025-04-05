@@ -1,0 +1,100 @@
+.nav-logo{
+    width: 159px;
+    height: 53px;
+}
+
+.nav-icon{
+    width: 21.88px;
+    height: 21.88px;
+    cursor: pointer; 
+}
+
+
+.story-img{
+    width: 488px;
+    height: 334px;
+}
+
+.user-icon{
+    width: 56px;
+    height: 56px;
+}
+
+.video-feu{
+    object-fit: cover; 
+    width: 100%;
+    height: 540px;
+}
+
+.service-img{
+    width: 488px;
+    height: 350px;
+    filter: brightness(50%); 
+}
+
+.offres-img{
+    width: 492px;
+    height: 432px;
+}
+
+.hotel-img{
+    height: 621px;
+    width: 488px;
+}
+
+.location p{
+    font-size: 20px
+}
+
+.video-home{
+    height: 920px;
+}
+
+.fondateur{
+    height: 100%;
+    width: 488px;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 480px){
+   
+    .nav-icon-mobile{
+        filter: invert(1) brightness(2); 
+    }
+    .video-home{
+        width: 100%;
+        height: 764px; 
+        object-fit: cover; 
+     
+    }
+    .hotel-img{
+        height: 374px;
+        width: 234px;
+    }
+    .story-img{
+        width: 314px;
+        height: 334px;
+    }
+    .icon-article{
+        width: 117px;
+        height: 88px;
+    }
+    .fondateur{
+        height: 320px;
+        width: 314px;
+        
+    }
+    .offres-img{
+        height: 374px;
+        width: 100%;
+    }
+    .video-feu{  
+        height: 340px;
+    }
+    .nav-mobile .menu-icon {
+        filter: invert(1) brightness(2);
+    }
+    
+    
+}

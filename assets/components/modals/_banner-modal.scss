@@ -1,0 +1,83 @@
+@use'../../abstracts/variables' as *;
+@use'../../abstracts/mixins' as *;
+
+.disponibilité{
+    position: absolute;
+    top: 54rem;
+    left: 22.9rem;
+    background-color: $tertiary-color;
+    height: 14rem;
+    @include flex-column;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 2rem;
+    border-radius: 18px;
+}
+.form-dispo{
+    @include flex-row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem
+}
+.hotel,.personnes,.date{
+    @include flex-column;
+    gap: 0.2rem;
+}
+.form-dispo input,.form-dispo select{
+    background-color: $primary-color;
+    color: $tertiary-color;
+    padding: 1rem;
+    font-family: 'Karla-regular';
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.hotel select{
+    width: 14rem;
+}
+.personnes input{
+    width: 10rem;
+}
+.date input{
+    width: 14.5rem;
+}
+.form-dispo button{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 480px){
+    .disponibilité{
+        position: absolute;
+        top: 70%;
+        left: 10%;
+        background-color: $tertiary-color;
+        height: auto;
+        width: 80%;
+        align-items: center   
+    }
+    .form-dispo{
+        @include flex-column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem
+    }
+    .hotel select{
+        width: 15rem;
+    }
+    .personnes input{
+        width: 15rem;
+    }
+    .date input{
+        width: 15rem;
+    }
+    .hotel,.personnes,.date{
+        align-items: center;
+    }
+    .form-btn{
+        display: none;
+    }  
+}
+

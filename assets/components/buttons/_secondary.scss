@@ -1,0 +1,12 @@
+@use'../../abstracts/variables' as *;
+#secondary-btn{
+    height: 37px;
+    border-radius: 6px;
+    background-color: $secondray-color;
+    color: white;
+    font-family: 'Karla-regular';
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0.5rem;
+    cursor: pointer;
+}

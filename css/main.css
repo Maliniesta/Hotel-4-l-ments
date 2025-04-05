@@ -1,0 +1,1044 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E5E0DC;
+}
+
+.container-fixed {
+  margin-top: 8rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.container-fixed-right {
+  margin-top: 8rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  width: 70%;
+  margin: 8rem auto 10rem auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  width: 69rem;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-footer {
+  background-color: white;
+}
+
+.coordonnées {
+  display: flex;
+  flex-direction: row;
+  gap: 18.2rem;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  padding: 2rem;
+  justify-content: space-around;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-left: 1.5rem;
+  }
+  .container-fixed {
+    width: 100%;
+  }
+  .coordonnées {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 480px) and (max-width: 768px) {
+  .container-fixed-right {
+    width: 90%;
+    margin: 2rem auto;
+  }
+}
+h1 {
+  font-family: "Play-meduium";
+  color: #D9C7B3;
+  font-size: 100px;
+}
+
+h4 {
+  font-family: "Play-bold";
+  font-size: 30px;
+  color: #363A2B;
+}
+
+h2 {
+  font-family: "Play-medium";
+  font-size: 96px;
+  color: #363A2B;
+  font-weight: 500;
+}
+
+h3 {
+  font-family: "Play-bold";
+  font-weight: 700;
+  font-size: 48px;
+  color: #363A2B;
+}
+
+h5 {
+  font-family: "Play-bold";
+  font-weight: 700;
+  font-size: 20px;
+  color: #363A2B;
+}
+
+.legende {
+  color: #363A2B;
+  font-family: "Karla-regular";
+  font-weight: 400;
+}
+
+p {
+  color: #363A2B;
+  font-weight: 400;
+  font-family: "Karla-regular";
+  font-size: 20px;
+}
+
+.bold {
+  color: #363A2B;
+  font-weight: 700;
+  font-family: "Karla-regular";
+}
+
+.little {
+  color: #363A2B;
+  font-weight: 400;
+  font-family: "Karla-regular";
+  font-size: 15px;
+}
+
+.offre-item p {
+  font-size: 15px;
+}
+
+article a {
+  font-size: 12px;
+}
+
+.absolute h4, .absolute p {
+  color: white;
+}
+
+.absolute-2 h4, .absolute-2 p {
+  color: white;
+}
+
+.rate p {
+  font-size: 15px;
+}
+
+.banner h1 {
+  position: absolute;
+  top: 394px;
+  left: 292px;
+  width: 1164px;
+  text-align: right;
+}
+
+@media screen and (max-width: 480px) {
+  h4 {
+    font-size: 17px;
+  }
+  h2 {
+    font-size: 64px;
+  }
+  p {
+    font-size: 17px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  h4 {
+    font-size: 30px;
+  }
+}
+.nav-logo {
+  width: 159px;
+  height: 53px;
+}
+
+.nav-icon {
+  width: 21.88px;
+  height: 21.88px;
+  cursor: pointer;
+}
+
+.story-img {
+  width: 488px;
+  height: 334px;
+}
+
+.user-icon {
+  width: 56px;
+  height: 56px;
+}
+
+.video-feu {
+  object-fit: cover;
+  width: 100%;
+  height: 540px;
+}
+
+.service-img {
+  width: 488px;
+  height: 350px;
+  filter: brightness(50%);
+}
+
+.offres-img {
+  width: 492px;
+  height: 432px;
+}
+
+.hotel-img {
+  height: 621px;
+  width: 488px;
+}
+
+.location p {
+  font-size: 20px;
+}
+
+.video-home {
+  height: 920px;
+}
+
+.fondateur {
+  height: 100%;
+  width: 488px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+  .nav-icon-mobile {
+    filter: invert(1) brightness(2);
+  }
+  .video-home {
+    width: 100%;
+    height: 764px;
+    object-fit: cover;
+  }
+  .hotel-img {
+    height: 374px;
+    width: 234px;
+  }
+  .story-img {
+    width: 314px;
+    height: 334px;
+  }
+  .icon-article {
+    width: 117px;
+    height: 88px;
+  }
+  .fondateur {
+    height: 320px;
+    width: 314px;
+  }
+  .offres-img {
+    height: 374px;
+    width: 100%;
+  }
+  .video-feu {
+    height: 340px;
+  }
+  .nav-mobile .menu-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+#primary-btn {
+  width: 180px;
+  height: 49px;
+  border-radius: 6px;
+  background-color: #363A2B;
+  color: white;
+  font-family: "Karla-regular";
+  font-weight: 400;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#secondary-btn {
+  height: 37px;
+  border-radius: 6px;
+  background-color: #4F6234;
+  color: white;
+  font-family: "Karla-regular";
+  font-weight: 400;
+  font-size: 20px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.modale-connexion {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #363A2B;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  z-index: 100;
+  width: 20%;
+}
+
+.modale-connexion form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.modale-connexion button {
+  margin-top: 4rem;
+  height: 3rem;
+  background-color: #D9C7B3;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  font-family: "Karla-regular";
+  width: 50%;
+}
+
+.modale-connexion input {
+  height: 2rem;
+  background-color: #D9C7B3;
+  font-family: "Karla-regular";
+  width: 80%;
+}
+
+.disponibilité {
+  position: absolute;
+  top: 54rem;
+  left: 22.9rem;
+  background-color: #D9C7B3;
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 2rem;
+  border-radius: 18px;
+}
+
+.form-dispo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hotel, .personnes, .date {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.form-dispo input, .form-dispo select {
+  background-color: #363A2B;
+  color: #D9C7B3;
+  padding: 1rem;
+  font-family: "Karla-regular";
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.hotel select {
+  width: 14rem;
+}
+
+.personnes input {
+  width: 10rem;
+}
+
+.date input {
+  width: 14.5rem;
+}
+
+.form-dispo button {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 480px) {
+  .disponibilité {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    background-color: #D9C7B3;
+    height: auto;
+    width: 80%;
+    align-items: center;
+  }
+  .form-dispo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+  .hotel select {
+    width: 15rem;
+  }
+  .personnes input {
+    width: 15rem;
+  }
+  .date input {
+    width: 15rem;
+  }
+  .hotel, .personnes, .date {
+    align-items: center;
+  }
+  .form-btn {
+    display: none;
+  }
+}
+.modale-reservation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #363A2B;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  z-index: 11;
+  width: 50%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modale-reservation form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.modale-reservation input {
+  background-color: #D9C7B3;
+  font-family: "Karla-regular";
+}
+
+.modale-reservation button {
+  margin-top: 4rem;
+  height: 3rem;
+  background-color: #D9C7B3;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  font-family: "Karla-regular";
+  width: 50%;
+}
+
+.choix-hotel {
+  background-color: #D9C7B3;
+  height: 2rem;
+  font-family: "Karla-regular";
+  font-size: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .modale-reservation {
+    top: 40%;
+    left: 35%;
+    width: 60%;
+  }
+}
+.modale-recap {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #D9C7B3;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  z-index: 100;
+  width: 50%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modale-recap button {
+  height: 3rem;
+  background-color: #363A2B;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  font-family: "Karla-regular";
+  width: 50%;
+}
+
+.modale-recap p {
+  color: #363A2B;
+  font-size: 20px;
+  font-family: "Karla-regular";
+  font-weight: 800;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .modale-recap {
+    top: 60%;
+    left: 35%;
+    width: 60%;
+  }
+}
+.navbar, .navbar ul, .nav-pages, .nav-liens, .nav-contact, .nav-user {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar {
+  height: 4.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(229, 224, 220, 0.9);
+  gap: 26.3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Style après avoir scrollé */
+.navbar.scrolled {
+  background-color: #363A2B;
+  color: white;
+}
+
+.nav-pages {
+  width: 28.5rem;
+  gap: 3.5rem;
+}
+
+.navbar ul {
+  gap: 3.5rem;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #363A2B;
+  font-family: "Karle-regular";
+  font-size: 20px;
+}
+
+.navbar.scrolled a {
+  color: white;
+}
+
+.nav-liens {
+  width: 30.1rem;
+  justify-content: space-around;
+  gap: 5.3rem;
+}
+
+.nav-contact {
+  gap: 1.3rem;
+  align-items: center;
+}
+
+.nav-user {
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+  .nav-mobile {
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10rem;
+  }
+  .nav-links {
+    display: none;
+  }
+  .lien-mobile {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #363A2B;
+    border: 1px solid #ccc;
+    padding: 3rem;
+    z-index: 1;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .nav-links.visible {
+    display: flex;
+  }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+}
+.publicité {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 100%;
+}
+
+.publicité p {
+  font-size: 15px;
+}
+
+.pub-lien {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.contact-details p {
+  font-size: 15px;
+}
+
+.juridique {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.hotels {
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.logement {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10rem;
+  flex-grow: 1;
+}
+
+.présentation, .stars {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  justify-content: center;
+}
+
+.présentation {
+  width: 491px;
+  flex-shrink: 0;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.avis-ville {
+  display: flex;
+  flex-direction: column;
+  gap: 0.68rem;
+}
+
+.visuel {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+.rate {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+}
+
+.logement.style-1 {
+  margin-left: 10.6rem;
+  justify-content: start;
+}
+
+.logement.style-2 {
+  margin-right: 10.6rem;
+  justify-content: end;
+}
+
+.story {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+
+.story-detail {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+}
+
+.story-description {
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+}
+
+@media screen and (max-width: 480px) {
+  .logement {
+    gap: 0;
+  }
+  .logement.style-1 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 1rem;
+  }
+  .logement.style-2 {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .visuel {
+    gap: 1rem;
+  }
+  .présentation {
+    gap: 2rem;
+  }
+  .stars {
+    gap: 2rem;
+  }
+  .hotel-details {
+    width: 50%;
+  }
+  .hotels {
+    gap: 5rem;
+  }
+  .story {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .story-description {
+    width: 75%;
+  }
+  .story-detail {
+    width: 38%;
+  }
+  .story-detail h3 {
+    width: 50%;
+  }
+}
+.offres {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+  flex-wrap: nowrap;
+}
+
+.offres-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.offres-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.offres-options {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.offre-item {
+  width: 50%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.service-item {
+  position: relative;
+}
+
+.options-carousel {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.absolute {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-end;
+}
+
+.absolute-2 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 17.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  align-items: flex-end;
+}
+
+.générale {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.avis {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 8rem;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.profil {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.reglement {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  column-gap: 12rem;
+  row-gap: 1rem;
+}
+
+.reglement-details {
+  width: 40%;
+}
+
+.reglement-option {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.générale-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .offres {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    flex-wrap: nowrap;
+  }
+  .offres button {
+    margin: 0 auto;
+  }
+  .options-carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .service-item {
+    width: 40%;
+  }
+  .avis {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .générale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .information {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+  }
+  .information h3 {
+    text-align: center;
+  }
+  .reglement-details {
+    width: 100%;
+  }
+  .reglement {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@font-face {
+  font-family: "Play-medium";
+  src: url("playFair/PlayfairDisplay-Medium.ttf");
+}
+@font-face {
+  font-family: "Play-bold";
+  src: url("playFair/PlayfairDisplay-Bold.ttf");
+}
+@font-face {
+  font-family: "Karla-regular";
+  src: url("Karla/Karla-Regular.ttf");
+}
+@font-face {
+  font-family: "Karla-bold";
+  src: url("Karla/Karla-Bold.ttf");
+}
+
+/*# sourceMappingURL=main.css.map */

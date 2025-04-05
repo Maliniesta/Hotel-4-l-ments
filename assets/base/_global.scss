@@ -1,0 +1,72 @@
+@use'../abstracts/mixins' as *;
+@use'../abstracts/variables' as *;
+
+.container-fixed{
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+    @include flex-column;
+    gap: 5rem;   
+}
+.container-fixed-right {
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+    @include flex-column;
+    gap: 5rem;   
+    width: 70%;
+    margin: 8rem auto 10rem auto; // Centre horizontalement
+}
+.info{
+    @include flex-column;
+    gap: 10rem;
+    width: 69rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.container-footer{
+    background-color: white;
+}
+.coordonnées{
+    @include flex-row;
+    gap: 18.2rem;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 2rem;
+    justify-content: space-around;
+    
+}
+.container-fluid{
+    width: 100%;
+}
+.title{
+    @include flex-column;
+    gap: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem
+}
+
+@media screen and (max-width: 480px){
+    .info{
+        @include flex-column;
+        gap: 0;
+        margin-left: 1.5rem;       
+    }
+    .container-fixed{
+        width: 100%;
+    }
+    .coordonnées{
+        @include flex-column;
+        gap: 5rem;
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem;
+        justify-content: space-around;
+    }
+    @media (max-width: 768px) {
+        .container-fixed-right {
+            width: 90%; // Réduction de la largeur pour petits écrans
+            margin: 2rem auto; // Toujours centré horizontalement
+        }
+    }   
+}

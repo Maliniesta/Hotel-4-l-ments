@@ -1,0 +1,149 @@
+@use'../abstracts/variables' as *;
+@use'../abstracts/mixins' as *;
+
+.offres{
+    width: 90% ;
+    @include flex-row; 
+    gap: 8rem;
+    flex-wrap: nowrap
+}
+.offres-details{
+    @include flex-column; 
+    gap: 2rem;    
+}
+.offres-description{
+    @include flex-column; 
+    gap: 1.6rem;
+}
+.offres-options{
+    @include flex-row;
+    width: 100%;
+    flex-wrap: wrap;     
+}
+.offre-item{
+    width: 50%;
+    padding: 0.5rem;
+    @include flex-row;
+    gap: 0.5rem;
+    align-items: center;   
+}
+.services{
+    @include flex-column;
+    gap: 3rem;
+}
+.service-item{
+    position: relative;
+
+}
+.options-carousel{
+    @include flex-row;
+    gap: 4rem;
+}
+
+.absolute{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 280px;
+    @include flex-column;
+    gap: 14px;
+    align-items: flex-end;
+}
+.absolute-2{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 17.5rem;
+    @include flex-column;
+    gap: 0.9rem;
+    align-items: flex-end;
+}
+.générale{
+    @include flex-column;
+    gap: 3.5rem;
+}
+.avis{
+    @include flex-row;
+    width: 100%;
+    gap: 8rem;
+}
+.user{
+    @include flex-column;
+    gap: 1rem;
+}
+.rating{
+    @include flex-row;
+    gap: 0.5rem;
+}
+.profil{
+    @include flex-row;
+    gap: 1rem;
+}
+.information{
+    @include flex-column;
+    gap: 4rem;  
+}
+.reglement{
+    @include flex-row;
+    width: 100%;
+    flex-wrap: wrap;
+    column-gap: 12rem;
+    row-gap: 1rem;    
+}
+.reglement-details{
+width: 40%;
+}
+.reglement-option{
+    @include flex-row;
+    gap: 1.5rem;
+}
+.info-item{
+    @include flex-column;
+    gap: 0.5rem ;
+}
+.générale-contact{
+    @include flex-column;
+    gap: 2rem ;
+}
+
+@media screen and (max-width: 480px){
+    .offres{
+        width: 100% ;
+        @include flex-column; 
+        gap: 8rem;
+        flex-wrap: nowrap
+    }
+    .offres button{
+        margin: 0 auto;
+    }
+    .options-carousel{
+        @include flex-column;
+        gap: 4rem;
+    }
+    .service-item{
+        width: 40%;
+    }
+    .avis{
+        @include flex-column;
+        gap: 2rem;
+    }
+    .générale{
+    @include flex-column;
+    align-items: center;
+    }
+    .information{
+        @include flex-column;
+        gap:4rem;
+        align-items: center;
+    }
+    .information h3{
+    text-align: center;
+    }
+    .reglement-details{
+    width: 100%;
+    }
+    .reglement{
+        @include flex-column;
+        width: 100%;  
+    }
+}

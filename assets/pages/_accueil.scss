@@ -1,0 +1,108 @@
+@use'../abstracts/variables' as *;
+@use'../abstracts/mixins' as *;
+
+.hotels{
+margin-top: 20rem;
+@include flex-column;
+gap: 10rem;
+}
+.logement{
+    @include flex-row; 
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10rem;
+    flex-grow: 1;
+}
+.présentation,.stars{
+    @include flex-column;
+    gap: 48px;
+    justify-content: center
+}
+.présentation{
+    width: 491px;
+    flex-shrink: 0;
+}
+.location{
+    @include flex-row;   
+    align-items: center
+}
+.avis-ville{
+    @include flex-column;
+    gap: 0.68rem;
+}
+.visuel{
+    @include flex-row; 
+    gap: 2rem;
+    flex-wrap: nowrap;   
+}
+.rate{
+    @include flex-row; 
+    gap: 0.2rem;  
+}
+.logement.style-1{
+    margin-left: 10.6rem;
+    justify-content: start;
+}
+.logement.style-2{
+    margin-right: 10.6rem;
+    justify-content: end;
+}
+.story{
+    @include flex-row;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+.story-detail{
+    width: 38%;
+    @include flex-column;
+    gap: 2.3rem;   
+}
+.story-description{
+    @include flex-column;
+    gap: 2.3rem;
+}
+
+
+@media screen and (max-width: 480px){
+    .logement{
+        gap: 0;
+        
+    }
+    .logement.style-1{
+        display: flex;
+        flex-direction: column-reverse; 
+        margin-left: 1rem;
+    }
+    .logement.style-2{
+        margin-left: 1rem;
+        @include flex-column;    
+    }
+    .visuel{
+        gap: 1rem;   
+    }
+    .présentation{
+        gap: 2rem;
+    }
+    .stars{
+        gap: 2rem;
+    }
+    .hotel-details{
+        width: 50%;
+    }
+    .hotels{
+        gap: 5rem;
+    }
+    .story{
+        @include flex-column;  
+        gap: 5rem; 
+    }
+    .story-description{
+        width: 75%;
+    }
+    .story-detail{
+        width: 38%;   
+    }
+    .story-detail h3{
+        width: 50%;
+    }
+}

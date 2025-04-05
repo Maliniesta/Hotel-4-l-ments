@@ -1,0 +1,12 @@
+@use'../../abstracts/variables' as *;
+#primary-btn{
+    width: 180px;
+    height: 49px;
+    border-radius: 6px;
+    background-color: $primary-color;
+    color: white;
+    font-family: 'Karla-regular';
+    font-weight: 400;
+    font-size: 30px;
+    cursor: pointer;
+}

@@ -1,0 +1,106 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables'as *;
+
+.navbar,.navbar ul,.nav-pages,.nav-liens,.nav-contact,.nav-user{
+    @include flex-row;
+}
+.navbar{
+    height: 4.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-navbar ;
+    gap: 26.3rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; // Assure qu'elle reste au-dessus de la vidéo  
+}
+/* Style après avoir scrollé */
+.navbar.scrolled {
+    background-color: $primary-color; 
+    color: white; 
+}
+.nav-pages{
+    width: 28.5rem;
+    gap: 3.5rem;
+}
+.navbar ul{
+    gap: 3.5rem;
+    align-items: center;
+}li{
+    list-style: none;
+}a{
+    text-decoration: none;
+    color: $primary-color;
+    font-family: 'Karle-regular';
+    font-size: 20px;
+}
+.navbar.scrolled a {
+    color: white; 
+}
+.nav-liens{
+    width: 30.1rem;
+    justify-content: space-around;
+    gap: 5.3rem;
+}
+.nav-contact{
+    gap: 1.3rem;
+    align-items: center;
+}
+.nav-user{
+    gap: 0.75rem;
+    align-items: center;
+}
+.video-container{
+    position: relative; 
+    width: 100%;
+}
+.nav-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 480px){
+    .navbar{
+        display: none;
+    }
+    .nav-mobile{
+        display: block;
+        position: absolute;
+        top: 5%;
+        left: 20%;
+        z-index: 1;
+        @include flex-row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10rem;
+
+    }
+    .nav-links{
+        display: none;
+    }
+    .lien-mobile{
+        @include flex-row;
+        gap: 1rem;
+    }
+    .nav-links {
+        display: none; 
+        flex-direction: column; 
+        gap: 2rem; 
+        position: absolute; 
+        top: 100%; 
+        left: 0; 
+        background-color: $primary-color;
+        border: 1px solid #ccc; 
+        padding: 3rem; 
+        z-index: 1;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+    .nav-links.visible {
+        display: flex; 
+    }
+    .nav-links a {
+        color: white; 
+        text-decoration: none; 
+    } 
+}
+

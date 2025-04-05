@@ -1,0 +1,33 @@
+// Importer les abstracts
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+
+// Importer les bases
+@use 'base/reset';
+@use 'base/global';
+@use 'base/typography';
+
+// Importer les composants
+@use 'components/buttons/image-style';
+@use 'components/buttons/primary';
+@use 'components/buttons/secondary';
+
+@use 'components/modals/modal-connexion';
+@use'components/modals/banner-modal';
+@use'components/modals/modal-reservation';
+@use'components/modals/modal-recap';
+
+
+// Importer la mise en page (layout)
+@use 'layout/header.scss';
+@use 'layout/footer.scss';
+
+
+// Importer les pages
+@use 'pages/accueil';
+@use 'pages/page';
+
+
+@use '../fonts/styles.scss';
+
+

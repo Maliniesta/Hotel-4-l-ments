@@ -1,0 +1,94 @@
+@use'../abstracts/variables' as *;
+@use'../abstracts/mixins' as *;
+
+h1{
+    font-family: 'Play-meduium';
+    color: $tertiary-color;
+    font-size: 100px;
+}
+h4{
+    font-family: 'Play-bold';
+    font-size: 30px;
+    color: $primary-color;
+}
+h2{
+    font-family: 'Play-medium';
+    font-size: 96px;
+    color: $primary-color;
+    font-weight: 500;
+}
+h3{
+    font-family: 'Play-bold';
+    font-weight: 700;
+    font-size: 48px;
+    color: $primary-color;
+}
+h5{
+    font-family: 'Play-bold';
+    font-weight: 700;
+    font-size: 20px;
+    color: $primary-color;
+}
+.legende{
+    color: $primary-color;
+    font-family: 'Karla-regular';
+    font-weight: 400;
+}
+p{
+    color: $primary-color;
+    font-weight: 400;
+    font-family: 'Karla-regular';
+    font-size: 20px;
+}
+.bold{
+    color: $primary-color;
+    font-weight: 700;
+    font-family: 'Karla-regular';
+    
+}
+.little{
+    color: $primary-color;
+    font-weight: 400;
+    font-family: 'Karla-regular';
+    font-size: 15px;
+}
+.offre-item p{
+    font-size: 15px;
+}
+article a{
+    font-size: 12px;
+}
+.absolute h4,.absolute p{
+    color: white;
+}
+.absolute-2 h4,.absolute-2 p{
+    color: white;
+}
+.rate p{
+    font-size: 15px;
+}
+.banner h1{
+    position: absolute;
+    top: 394px;
+    left: 292px;
+    width: 1164px;
+    text-align: right;
+}
+
+@media screen and (max-width: 480px){  
+h4{
+    font-size: 17px;
+}
+h2{
+    font-size: 64px;
+}
+p{
+    font-size: 17px;
+}
+h3{
+    font-size: 40px;
+}
+h4{
+    font-size: 30px;
+}
+}
