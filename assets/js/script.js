@@ -354,9 +354,15 @@ function ouvrirModaleReservation() {
     const form = document.querySelector(".form-dispo");
     const dateInput = document.querySelector("#date-arrivee");
   
-    //  Empêche les dates passées
+    // Empêche les dates passées
     const today = new Date().toISOString().split("T")[0];
     dateInput.min = today;
+  
+    // Fonction pour formater la date en JJ/MM/AAAA
+    const formatDateToFr = (isoDate) => {
+      const [year, month, day] = isoDate.split("-");
+      return `${day}/${month}/${year}`;
+    };
   
     form.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -375,13 +381,12 @@ function ouvrirModaleReservation() {
         return;
       }
   
-      //  Tout est OK
-      alert("Chambre disponible ! Redirection vers la page de l’hôtel...");
+      const formattedDate = formatDateToFr(date);
   
-      // Redirection selon l'hôtel choisi
+      alert(`Chambre disponible le ${formattedDate} ! Redirection...`);
+  
       switch (hotel) {
         case "hotel-feu":
-
           window.location.href = "../../feu.html";
           break;
         case "hotel-air":
@@ -398,6 +403,8 @@ function ouvrirModaleReservation() {
       }
     });
   });
+  
+  
 
   // Sélectionner l'icône du menu et la navigation
 const menuIcon = document.getElementById('menu-icon');

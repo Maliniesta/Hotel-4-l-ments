@@ -9,6 +9,11 @@ body {
   background-color: #E5E0DC;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .container-fixed {
   margin-top: 8rem;
   margin-bottom: 10rem;
@@ -434,9 +439,6 @@ article a {
   .hotel, .personnes, .date {
     align-items: center;
   }
-  .form-btn {
-    display: none;
-  }
 }
 .modale-reservation {
   position: fixed;
@@ -505,8 +507,8 @@ article a {
   }
   .modale-reservation {
     top: 40%;
-    left: 35%;
-    width: 60%;
+    left: 45%;
+    width: 80%;
   }
 }
 .modale-recap {
@@ -544,9 +546,9 @@ article a {
 
 @media screen and (max-width: 480px) {
   .modale-recap {
-    top: 60%;
-    left: 35%;
-    width: 60%;
+    top: 40%;
+    left: 12%;
+    width: 20%;
   }
 }
 .navbar, .navbar ul, .nav-pages, .nav-liens, .nav-contact, .nav-user {
@@ -652,7 +654,7 @@ a {
     gap: 2rem;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 10%;
     background-color: #363A2B;
     border: 1px solid #ccc;
     padding: 3rem;
