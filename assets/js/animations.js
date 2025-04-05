@@ -4,7 +4,10 @@
 /*-si on clique sur une image alors elle prend la place de la deuxieme et la deuxieme prend la place de la premiere*/
 
 /*-si on click sur une image du carousel des service, elle prend la place qui est tout a gauche*/ 
+ 
+/*quand le scrolle arrive a 100vh , la barre de navigation devien verte et les lien blanc*/
 
+/*en mobile quand on clik sur le menu burger , il ouvre la liste des liens */ 
 
 // Sélectionner tous les conteneurs contenant des images
 const groupesVisuels = document.querySelectorAll('.visuel');
